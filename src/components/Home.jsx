@@ -5,7 +5,7 @@ import logo from '../assets/images/logo.svg'
 
 const Home = () => {
   return (
-    <div className='md:flex relative'>
+    <div className='md:flex relative max-h-full mb-[70rem] md:mb-5'>
 
             <div className='   md:max-w-[65%] bg-gradient-to-r from-clr2 to-clr3 h-[27rem] md:h-[40rem] rounded-br-[45px] md:px-[8rem] px-[2rem] md:py-[4rem] py-[2rem]'>
 

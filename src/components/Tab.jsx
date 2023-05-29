@@ -15,7 +15,7 @@ const Tab = () => {
 
 
     return (
-        <div className='p-7 bg-clr2 shadow-xl shadow-clr3 md:translate-y-0  translate-y-[12rem] top-[13rem] md:top-[30%] md:left-[53%] absolute  max-w-[90%] max:translate-x-18  md:max-w-[35%] h-fit mini:translate-x-8 rounded-[20px]'>
+        <div className='p-7 bg-clr2 shadow-xl shadow-clr3 md:translate-y-0  translate-y-[12rem] top-[13rem] md:top-[30%] md:left-[53%] absolute left-5  max-w-[90%] max:translate-x-18  md:max-w-[35%] h-fit mini:translate-x-8 rounded-[20px]'>
 
             <div>
                 <h2 className='mb-5 text-black text-2xl font-semibold'>Enter your details below</h2>

@@ -16,7 +16,7 @@ useEffect(() => {
         setResult('')
       }
       else{
-        let x = height / 100
+        let x = height / 10000
         setResult(weight / x)
         console.log(result)
       }
@@ -74,7 +74,7 @@ useEffect(() => {
                   <div className='flex justify-between text-justify'>
                   <div className='max-w-[40%]'>
                     <p className='text-1xl'> Your BMI is...</p>
-                    <h1 className='text-3xl font-bold font-sans'> {result.toString().substring(0, 5)}</h1>
+                    <h1 className='text-3xl font-bold font-sans'> {result.toString().substring(0, 4)}</h1>
                   </div>
 
                   
