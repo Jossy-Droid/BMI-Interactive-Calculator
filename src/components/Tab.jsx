@@ -28,11 +28,11 @@ const Tab = () => {
                         <label htmlFor="" className=' font-semibold'>Metric</label>
                     </div>
 
-                    <div className='flex items-center gap-2 mr-28'>
+                    <div className='flex items-center gap-2 mr-[30%]'>
                         <input type="radio" name="Calculation" id="" value={false}
                             className={activeTab === 2 ? 'active form-radio text-indigo-600 h-5 w-5' : 'h-5 w-5'}
                             onClick={() => handleTabClick(2)} />
-                        <label htmlFor="" className=' font-semibold'>Imperial</label>
+                        <label htmlFor="" className='  font-semibold'>Imperial</label>
                     </div>
 
                 </div>

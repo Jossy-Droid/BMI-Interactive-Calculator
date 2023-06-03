@@ -16,8 +16,10 @@ useEffect(() => {
         setResult('')
       }
       else{
-        let x = height / 10000
-        setResult(weight / x)
+        let x = height / 100
+        let y = x * x
+
+        setResult(weight / y )
         console.log(result)
       }
 
@@ -37,6 +39,10 @@ useEffect(() => {
         setStatement('Obese')
       }
 
+      else{
+        setStatement('Obese II')
+      }
+
 }, [result, weight, height]);
 
 
@@ -48,14 +54,14 @@ useEffect(() => {
             <div className='max-w-[50%] block relative'>
               <label htmlFor="" className='text-gray-600 text-sans text-sm'>Height</label>
 
-              <input type="text" placeholder='0' className='w-full h-[58px] placeholder:text-gray-600 placeholder:text-3xl px-2 my-5 border-clr3 border rounded-lg placeholder:font-semibold'  onChange={(e)=>setHeight(e.target.value)} />
+              <input type="text" placeholder='0' className='w-full h-[58px] placeholder:text-gray-600 placeholder:text-3xl px-2 my-5 border-clr3 border rounded-lg placeholder:font-semibold font-semibold  text-gray-600 text-3xl'  onChange={(e)=>setHeight(e.target.value)} />
  
               <p className='absolute text-clr4 text-3xl top-12 right-3 font-sans font-semibold'>cm</p>
             </div>
 
             <div className='max-w-[50%] block relative'>
               <label htmlFor="" className='text-gray-600 text-sans text-sm'>Weight</label>
-              <input type="text" placeholder='0' className='w-full h-[58px] placeholder:text-gray-600 placeholder:text-3xl px-2 my-5 border-clr3 border rounded-lg placeholder:font-semibold'  onChange={(e)=> setWeight(e.target.value)} />
+              <input type="text" placeholder='0' className='w-full h-[58px] placeholder:text-gray-600 placeholder:text-3xl px-2 my-5 border-clr3 border rounded-lg font-semibold  text-gray-600 text-3xl'  onChange={(e)=> setWeight(e.target.value)} />
 
               
 
@@ -74,7 +80,7 @@ useEffect(() => {
                   <div className='flex justify-between text-justify'>
                   <div className='max-w-[40%]'>
                     <p className='text-1xl'> Your BMI is...</p>
-                    <h1 className='text-3xl font-bold font-sans'> {result.toString().substring(0, 4)}</h1>
+                    <h1 className='text-3xl font-bold font-sans'> {result.toString().substring(0, 5)}</h1>
                   </div>
 
                   
